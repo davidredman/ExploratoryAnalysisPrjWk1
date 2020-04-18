@@ -18,7 +18,7 @@ hpc <- read.table ("household_power_consumption.txt", header = TRUE, sep = ";",
 hhpc <- subset(hpc, Date %in% c("1/2/2007","2/2/2007"))
 hhpc$Date <- as.Date(hhpc$Date, format="%d/%m/%Y")
 
-   Dim(hhpc) # extracted subset 2880 rows, 9 columns
+   dim(hhpc) # extracted subset 2880 rows, 9 columns
 
 # Plot 1
 
